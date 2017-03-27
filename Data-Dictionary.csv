@@ -1,0 +1,49 @@
+S No,Feature Name,Description ,Type
+1,duration ,length (number of seconds) of the connection ,continuous
+2,src_bytes ,number of data bytes from source to destination ,continuous
+3,dst_bytes ,number of data bytes from destination to source ,continuous
+4,land ,1 if connection is from/to the same host/port; 0 otherwise ,discrete
+5,wrong_fragment ,number of ``wrong'' fragments ,continuous
+6,urgent ,number of urgent packets ,continuous
+7,hot ,number of ``hot'' indicators,continuous
+8,num_failed_logins ,number of failed login attempts ,continuous
+9,logged_in ,1 if successfully logged in; 0 otherwise ,discrete
+10,num_compromised ,number of ``compromised'' conditions ,continuous
+11,root_shell ,1 if root shell is obtained; 0 otherwise ,discrete
+12,su_attempted ,1 if ``su root'' command attempted; 0 otherwise ,discrete
+13,num_root ,number of ``root'' accesses ,continuous
+14,num_file_creations ,number of file creation operations ,continuous
+15,num_shells ,number of shell prompts ,continuous
+16,num_access_files ,number of operations on access control files ,continuous
+17,is_hot_login ,1 if the login belongs to the ``hot'' list; 0 otherwise ,discrete
+18,is_guest_login ,1 if the login is a ``guest''login; 0 otherwise ,discrete
+19,count ,number of connections to the same host as the current connection in the past two seconds ,continuous
+,,Note: The following  features refer to these same-host connections.,
+20,serror_rate ,% of connections that have ``SYN'' errors ,continuous
+21,rerror_rate ,% of connections that have ``REJ'' errors ,continuous
+22,same_srv_rate ,% of connections to the same service ,continuous
+23,diff_srv_rate ,% of connections to different services ,continuous
+24,srv_count ,number of connections to the same service as the current connection in the past two seconds ,continuous
+,,Note: The following features refer to these same-service connections.,
+25,srv_serror_rate ,% of connections that have ``SYN'' errors ,continuous
+26,srv_rerror_rate ,% of connections that have ``REJ'' errors ,continuous
+27,srv_diff_host_rate ,% of connections to different hosts ,continuous 
+,,Note: The following  features refer to destination host connections.,
+28,dst_host_count,number of connections to the same host as the current connection in the past two seconds ,continuous 
+29,dst_host_same_srv_rate,% of connections to the same service ,continuous 
+30,dst_host_diff_srv_rate,% of connections to different services ,continuous 
+31,dst_host_same_src_port_rate,% of connections that have same source port rate,continuous 
+32,dst_host_serror_rate,% of connections that have ``SYN'' errors ,continuous 
+33,dst_host_rerror_rate,% of connections that have ``REJ'' errors ,continuous 
+,,Note: The following features refer to destination service connections.,
+34,dst_host_srv_count,number of connections to the same service as the current connection in the past two seconds ,continuous 
+35,dst_host_srv_serror_rate,% of connections that have ``SYN'' errors ,continuous 
+36,dst_host_srv_rerror_rate,% of connections that have ``REJ'' errors ,continuous 
+37,dst_host_srv_diff_host_rate,% of connections to different hosts ,continuous 
+38,protocol_type_icmp,connections with icmp protocol,discrete
+39,protocol_type_tcp,connections with tcp protocol,discrete
+40,service_ecr_i,connections with ECR network service on the destination,discrete
+41,service_private,connections with Private network service on the destination,discrete
+42,flag_S0,Connections with S0 status,discrete
+43,flag_SF,Connections with SF status,discrete
+44,ip,IP Address of the network element,
